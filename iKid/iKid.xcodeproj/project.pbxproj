@@ -14,6 +14,9 @@
 		0E8ED49F1EAFD23B007CE2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8ED49D1EAFD23B007CE2C5 /* LaunchScreen.storyboard */; };
 		0E8ED4AA1EAFD23B007CE2C5 /* iKidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8ED4A91EAFD23B007CE2C5 /* iKidTests.swift */; };
 		0E8ED4B51EAFD23B007CE2C5 /* iKidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8ED4B41EAFD23B007CE2C5 /* iKidUITests.swift */; };
+		0E8ED4C71EB03343007CE2C5 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8ED4C61EB03343007CE2C5 /* GoodViewController.swift */; };
+		0E8ED4C91EB03389007CE2C5 /* DadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8ED4C81EB03389007CE2C5 /* DadViewController.swift */; };
+		0E8ED4CB1EB033AC007CE2C5 /* PunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8ED4CA1EB033AC007CE2C5 /* PunViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		0E8ED4B01EAFD23B007CE2C5 /* iKidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8ED4B41EAFD23B007CE2C5 /* iKidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKidUITests.swift; sourceTree = "<group>"; };
 		0E8ED4B61EAFD23B007CE2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E8ED4C61EB03343007CE2C5 /* GoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
+		0E8ED4C81EB03389007CE2C5 /* DadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadViewController.swift; sourceTree = "<group>"; };
+		0E8ED4CA1EB033AC007CE2C5 /* PunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				0E8ED4941EAFD23B007CE2C5 /* AppDelegate.swift */,
 				0E8ED4961EAFD23B007CE2C5 /* MainViewController.swift */,
 				0E8ED4981EAFD23B007CE2C5 /* Main.storyboard */,
+				0E8ED4CA1EB033AC007CE2C5 /* PunViewController.swift */,
+				0E8ED4C81EB03389007CE2C5 /* DadViewController.swift */,
+				0E8ED4C61EB03343007CE2C5 /* GoodViewController.swift */,
 				0E8ED49B1EAFD23B007CE2C5 /* Assets.xcassets */,
 				0E8ED49D1EAFD23B007CE2C5 /* LaunchScreen.storyboard */,
 				0E8ED4A01EAFD23B007CE2C5 /* Info.plist */,
@@ -260,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E8ED4971EAFD23B007CE2C5 /* MainViewController.swift in Sources */,
+				0E8ED4CB1EB033AC007CE2C5 /* PunViewController.swift in Sources */,
+				0E8ED4C71EB03343007CE2C5 /* GoodViewController.swift in Sources */,
+				0E8ED4C91EB03389007CE2C5 /* DadViewController.swift in Sources */,
 				0E8ED4951EAFD23B007CE2C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +517,7 @@
 				0E8ED4BB1EAFD23B007CE2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E8ED4BC1EAFD23B007CE2C5 /* Build configuration list for PBXNativeTarget "iKidTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				0E8ED4BE1EAFD23B007CE2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E8ED4BF1EAFD23B007CE2C5 /* Build configuration list for PBXNativeTarget "iKidUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				0E8ED4C11EAFD23B007CE2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

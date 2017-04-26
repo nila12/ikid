@@ -13,7 +13,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="MainViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -73,11 +73,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-12" y="37"/>
         </scene>
         <!--Good View Controller-->
         <scene sceneID="qbU-0G-16F">
             <objects>
-                <viewController title="GoodVC" id="Bf7-bu-RLb" userLabel="Good View Controller" sceneMemberID="viewController">
+                <viewController title="GoodVC" id="Bf7-bu-RLb" userLabel="Good View Controller" customClass="GoodViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rKN-I6-mZz"/>
                         <viewControllerLayoutGuide type="bottom" id="kYj-EM-rOM"/>
@@ -108,7 +109,7 @@
         <!--Dad View Controller-->
         <scene sceneID="SHZ-nB-PlK">
             <objects>
-                <viewController id="gCq-Jl-1Gm" userLabel="Dad View Controller" sceneMemberID="viewController">
+                <viewController id="gCq-Jl-1Gm" userLabel="Dad View Controller" customClass="DadViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xfi-og-Fhf"/>
                         <viewControllerLayoutGuide type="bottom" id="V6u-fP-ED2"/>
@@ -139,7 +140,7 @@
         <!--Pun View Controller-->
         <scene sceneID="ooU-hA-x8B">
             <objects>
-                <viewController id="SM0-j7-qpK" userLabel="Pun View Controller" sceneMemberID="viewController">
+                <viewController id="SM0-j7-qpK" userLabel="Pun View Controller" customClass="PunViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qxo-sT-Aa2"/>
                         <viewControllerLayoutGuide type="bottom" id="nhJ-vg-x4G"/>
@@ -169,6 +170,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IBZ-6Q-uFx"/>
+        <segue reference="kVN-Uf-jhm"/>
     </inferredMetricsTieBreakers>
 </document>
