@@ -26,6 +26,11 @@ class DadViewController: UIViewController {
     @IBAction func nextPressed(_ sender: UIButton) {
         dadJoke.text = "An Instagram"
     }
+    
+    @IBAction func backPressed(_ sender: UIButton) {
+        dadJoke.text = "How much does a hipster weigh?"
+    }
+    
 
     /*
     // MARK: - Navigation

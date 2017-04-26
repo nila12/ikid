@@ -122,6 +122,7 @@
                                 <rect key="frame" x="46" y="607" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
+                                    <action selector="backPressed:" destination="gCq-Jl-1Gm" eventType="touchUpInside" id="sPs-1x-KNa"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="wns-gn-4Xf"/>
                                 </connections>
                             </button>
