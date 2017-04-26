@@ -10,6 +10,8 @@ import UIKit
 
 class DadViewController: UIViewController {
 
+    @IBOutlet weak var dadJoke: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,9 @@ class DadViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nextPressed(_ sender: UIButton) {
+        dadJoke.text = "An Instagram"
+    }
 
     /*
     // MARK: - Navigation
