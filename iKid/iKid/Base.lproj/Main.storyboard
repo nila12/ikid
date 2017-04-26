@@ -37,14 +37,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuV-gN-1Nb">
                                 <rect key="frame" x="61" y="362" width="38" height="30"/>
                                 <state key="normal" title="Good"/>
+                                <connections>
+                                    <segue destination="Bf7-bu-RLb" kind="show" id="AD9-Wu-i3F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jV3-Qm-y43">
                                 <rect key="frame" x="172" y="362" width="30" height="30"/>
                                 <state key="normal" title="Dad"/>
+                                <connections>
+                                    <segue destination="gCq-Jl-1Gm" kind="show" id="peG-Ps-OeG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAR-nz-ySJ">
                                 <rect key="frame" x="284" y="362" width="30" height="30"/>
                                 <state key="normal" title="Pun"/>
+                                <connections>
+                                    <segue destination="SM0-j7-qpK" kind="show" id="A8F-6t-Fpp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,7 +77,7 @@
         <!--Good View Controller-->
         <scene sceneID="qbU-0G-16F">
             <objects>
-                <viewController id="Bf7-bu-RLb" userLabel="Good View Controller" sceneMemberID="viewController">
+                <viewController title="GoodVC" id="Bf7-bu-RLb" userLabel="Good View Controller" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rKN-I6-mZz"/>
                         <viewControllerLayoutGuide type="bottom" id="kYj-EM-rOM"/>
@@ -76,7 +85,20 @@
                     <view key="view" contentMode="scaleToFill" id="6Ll-oB-BdD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQY-Ea-lgZ">
+                                <rect key="frame" x="46" y="607" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="IBZ-6Q-uFx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kYj-EM-rOM" firstAttribute="top" secondItem="EQY-Ea-lgZ" secondAttribute="bottom" constant="30" id="I4R-M3-ZTI"/>
+                            <constraint firstItem="EQY-Ea-lgZ" firstAttribute="leading" secondItem="6Ll-oB-BdD" secondAttribute="leadingMargin" constant="30" id="asn-QU-ac8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihx-O1-dbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,7 +116,20 @@
                     <view key="view" contentMode="scaleToFill" id="XlQ-xI-l6K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZJ-4h-fTu">
+                                <rect key="frame" x="46" y="607" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wns-gn-4Xf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ZJ-4h-fTu" firstAttribute="leading" secondItem="XlQ-xI-l6K" secondAttribute="leadingMargin" constant="30" id="Gee-h6-7E0"/>
+                            <constraint firstItem="V6u-fP-ED2" firstAttribute="top" secondItem="6ZJ-4h-fTu" secondAttribute="bottom" constant="30" id="mHR-U5-W0M"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6v4-ic-wUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,7 +147,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ljg-x8-HXn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F16-ar-qp3">
+                                <rect key="frame" x="46" y="607" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kVN-Uf-jhm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F16-ar-qp3" firstAttribute="leading" secondItem="Ljg-x8-HXn" secondAttribute="leadingMargin" constant="30" id="50g-XA-eeE"/>
+                            <constraint firstItem="nhJ-vg-x4G" firstAttribute="top" secondItem="F16-ar-qp3" secondAttribute="bottom" constant="30" id="9Zv-Xv-hqV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lvW-96-y8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,4 +168,7 @@
             <point key="canvasLocation" x="834" y="748"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IBZ-6Q-uFx"/>
+    </inferredMetricsTieBreakers>
 </document>
