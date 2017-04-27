@@ -25,6 +25,8 @@ class GoodViewController: UIViewController {
     
     @IBAction func nextPressed(_ sender: UIButton) {
         goodJoke.text = ".. for a dozen people to say 'bye' 300 times."
+        
+        //http://stackoverflow.com/questions/3073520/animate-text-change-in-uilabel
     }
     
     @IBAction func backPressed(_ sender: UIButton) {
