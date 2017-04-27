@@ -25,6 +25,15 @@ class DadViewController: UIViewController {
     
     @IBAction func nextPressed(_ sender: UIButton) {
         dadJoke.text = "An Instagram"
+        
+        UIView.transition(with: dadJoke,
+                          duration: 0.75,
+                          options: [.transitionFlipFromLeft],
+            animations: {
+                
+                self.dadJoke.text = "..would it have Windows?"
+                
+        }, completion: nil)
     }
     
     @IBAction func backPressed(_ sender: UIButton) {
