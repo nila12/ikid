@@ -105,16 +105,37 @@
                                 <rect key="frame" x="46" y="607" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
+                                    <action selector="backPressed:" destination="Bf7-bu-RLb" eventType="touchUpInside" id="4Bs-yK-Trc"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="IBZ-6Q-uFx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPU-Z1-ko5">
+                                <rect key="frame" x="132.5" y="323" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiI-1h-WBg">
+                                <rect key="frame" x="282" y="389" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextPressed:" destination="Bf7-bu-RLb" eventType="touchUpInside" id="BaC-e2-kje"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kPU-Z1-ko5" firstAttribute="centerY" secondItem="6Ll-oB-BdD" secondAttribute="centerY" id="FI6-EA-Qx4"/>
+                            <constraint firstItem="kPU-Z1-ko5" firstAttribute="centerX" secondItem="6Ll-oB-BdD" secondAttribute="centerX" id="Gku-FM-dcv"/>
                             <constraint firstItem="kYj-EM-rOM" firstAttribute="top" secondItem="EQY-Ea-lgZ" secondAttribute="bottom" constant="30" id="I4R-M3-ZTI"/>
+                            <constraint firstItem="aiI-1h-WBg" firstAttribute="top" secondItem="kPU-Z1-ko5" secondAttribute="bottom" constant="45" id="Imq-Zk-afN"/>
                             <constraint firstItem="EQY-Ea-lgZ" firstAttribute="leading" secondItem="6Ll-oB-BdD" secondAttribute="leadingMargin" constant="30" id="asn-QU-ac8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aiI-1h-WBg" secondAttribute="trailing" constant="45" id="v7O-aH-EUT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goodJoke" destination="kPU-Z1-ko5" id="Frh-XL-IWM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihx-O1-dbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,6 +247,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kVN-Uf-jhm"/>
+        <segue reference="IBZ-6Q-uFx"/>
     </inferredMetricsTieBreakers>
 </document>

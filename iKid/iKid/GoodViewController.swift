@@ -10,6 +10,8 @@ import UIKit
 
 class GoodViewController: UIViewController {
 
+    @IBOutlet weak var goodJoke: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,14 @@ class GoodViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func nextPressed(_ sender: UIButton) {
+        goodJoke.text = "Joke Answer"
+    }
+    
+    @IBAction func backPressed(_ sender: UIButton) {
+        goodJoke.text = "Joke Question"
+    }
+    
     /*
     // MARK: - Navigation
 
