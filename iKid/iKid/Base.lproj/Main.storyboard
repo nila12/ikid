@@ -34,46 +34,60 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuV-gN-1Nb">
-                                <rect key="frame" x="61" y="362" width="38" height="30"/>
-                                <state key="normal" title="Good"/>
-                                <connections>
-                                    <segue destination="Bf7-bu-RLb" kind="show" id="AD9-Wu-i3F"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jV3-Qm-y43">
-                                <rect key="frame" x="172" y="362" width="30" height="30"/>
-                                <state key="normal" title="Dad"/>
-                                <connections>
-                                    <segue destination="gCq-Jl-1Gm" kind="show" id="peG-Ps-OeG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAR-nz-ySJ">
-                                <rect key="frame" x="284" y="362" width="30" height="30"/>
-                                <state key="normal" title="Pun"/>
-                                <connections>
-                                    <segue destination="SM0-j7-qpK" kind="show" id="A8F-6t-Fpp"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcT-Xa-FGD">
+                                <rect key="frame" x="113" y="362" width="150" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4B3-gH-flZ"/>
+                                    <constraint firstAttribute="height" constant="45" id="eGf-iB-PEg"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" id="aDF-0k-5BI">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NuV-gN-1Nb">
+                                            <rect key="frame" x="16" y="7.5" width="38" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Good"/>
+                                            <connections>
+                                                <segue destination="Bf7-bu-RLb" kind="show" id="AD9-Wu-i3F"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="7Za-br-par">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jV3-Qm-y43">
+                                            <rect key="frame" x="64" y="7.5" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Dad"/>
+                                            <connections>
+                                                <segue destination="gCq-Jl-1Gm" kind="show" id="peG-Ps-OeG"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="x0H-Gb-Ycr">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JAR-nz-ySJ">
+                                            <rect key="frame" x="104" y="7.5" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Pun"/>
+                                            <connections>
+                                                <segue destination="SM0-j7-qpK" kind="show" id="A8F-6t-Fpp"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v2d-DK-LWJ" firstAttribute="top" secondItem="wUh-J4-SM9" secondAttribute="bottom" constant="75" id="0HN-dz-ueN"/>
-                            <constraint firstItem="jV3-Qm-y43" firstAttribute="top" secondItem="v2d-DK-LWJ" secondAttribute="bottom" constant="75" id="36u-BY-gcI"/>
                             <constraint firstItem="wUh-J4-SM9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="7Vd-wg-IrP"/>
-                            <constraint firstItem="NuV-gN-1Nb" firstAttribute="top" secondItem="v2d-DK-LWJ" secondAttribute="bottom" constant="75" id="Cmu-Ht-gar"/>
-                            <constraint firstItem="JAR-nz-ySJ" firstAttribute="top" secondItem="v2d-DK-LWJ" secondAttribute="bottom" constant="75" id="Gl4-hU-Tul"/>
+                            <constraint firstItem="rcT-Xa-FGD" firstAttribute="top" secondItem="v2d-DK-LWJ" secondAttribute="bottom" constant="75" id="DYA-1q-xsg"/>
                             <constraint firstItem="v2d-DK-LWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H6u-Te-mCr"/>
-                            <constraint firstItem="jV3-Qm-y43" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5g-ag-l5F"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JAR-nz-ySJ" secondAttribute="trailing" constant="45" id="c8h-Rz-Lxg"/>
                             <constraint firstItem="wUh-J4-SM9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c8r-bv-pff"/>
-                            <constraint firstItem="NuV-gN-1Nb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="xFD-cV-zEy"/>
+                            <constraint firstItem="rcT-Xa-FGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6X-ej-JVu"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="37"/>
+            <point key="canvasLocation" x="-12" y="36.431784107946029"/>
         </scene>
         <!--Good View Controller-->
         <scene sceneID="qbU-0G-16F">
