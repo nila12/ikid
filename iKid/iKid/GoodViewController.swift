@@ -24,11 +24,11 @@ class GoodViewController: UIViewController {
     }
     
     @IBAction func nextPressed(_ sender: UIButton) {
-        goodJoke.text = "Joke Answer"
+        goodJoke.text = ".. for a dozen people to say 'bye' 300 times."
     }
     
     @IBAction func backPressed(_ sender: UIButton) {
-        goodJoke.text = "Joke Question"
+        goodJoke.text = "A conference call is the best way .."
     }
     
     /*
