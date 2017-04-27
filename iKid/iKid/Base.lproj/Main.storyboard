@@ -188,7 +188,21 @@
                                 <rect key="frame" x="46" y="607" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
+                                    <action selector="backPressed:" destination="SM0-j7-qpK" eventType="touchUpInside" id="M0b-nD-kSk"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="kVN-Uf-jhm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If Apple made a car.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVp-cZ-X0e">
+                                <rect key="frame" x="109.5" y="323" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfZ-HT-GXT">
+                                <rect key="frame" x="282" y="389" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextPressed:" destination="SM0-j7-qpK" eventType="touchUpInside" id="PuY-FO-J85"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,8 +210,15 @@
                         <constraints>
                             <constraint firstItem="F16-ar-qp3" firstAttribute="leading" secondItem="Ljg-x8-HXn" secondAttribute="leadingMargin" constant="30" id="50g-XA-eeE"/>
                             <constraint firstItem="nhJ-vg-x4G" firstAttribute="top" secondItem="F16-ar-qp3" secondAttribute="bottom" constant="30" id="9Zv-Xv-hqV"/>
+                            <constraint firstItem="OVp-cZ-X0e" firstAttribute="centerY" secondItem="Ljg-x8-HXn" secondAttribute="centerY" id="LCD-W1-xoX"/>
+                            <constraint firstItem="wfZ-HT-GXT" firstAttribute="top" secondItem="OVp-cZ-X0e" secondAttribute="bottom" constant="45" id="Ldq-1R-odl"/>
+                            <constraint firstItem="OVp-cZ-X0e" firstAttribute="centerX" secondItem="Ljg-x8-HXn" secondAttribute="centerX" id="geL-kq-jab"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wfZ-HT-GXT" secondAttribute="trailing" constant="45" id="teX-NE-5zC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="punJoke" destination="OVp-cZ-X0e" id="vTB-hs-h27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lvW-96-y8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,6 +226,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wns-gn-4Xf"/>
+        <segue reference="kVN-Uf-jhm"/>
     </inferredMetricsTieBreakers>
 </document>

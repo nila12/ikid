@@ -9,7 +9,29 @@
 import UIKit
 
 class PunViewController: UIViewController {
+    
+    @IBOutlet weak var punJoke: UILabel!
+    
+    /*
+ It was an emotional wedding.
+     
+     Even the cake was in tiers.
+     
+     How do you make antifreeze?
+     
+     Steal her jacket.
+     
+     If Apple made a car ... would it have Windows?
+ */
 
+    @IBAction func nextPressed(_ sender: UIButton) {
+        punJoke.text = "..would it have Windows?"
+    }
+    
+    @IBAction func backPressed(_ sender: UIButton) {
+        punJoke.text = "If Apple made a car.."
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
